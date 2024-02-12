@@ -1,1 +1,0 @@
-# Not my idea , just learning new things .
