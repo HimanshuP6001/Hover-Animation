@@ -1,0 +1,91 @@
+/* CSS for text alignment and styling */
+a {
+  color: #187bb5;
+  font-size: 6vw;
+  font-family: "Rubik", sans-serif;
+  margin: 0rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  letter-spacing : .05em;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.2;
+}
+
+.fancy > .letter {
+  display: inline-block;
+  transition: transform 350ms ease;
+}
+
+.fancy:hover > .letter:nth-child(1) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(2) {
+  transform: translate(-40%, 20%) rotate(4deg);
+}
+.fancy:hover > .letter:nth-child(3) {
+  transform: translate(-10%, 60%) rotate(-6deg);
+}
+.fancy:hover > .letter:nth-child(4) {
+  transform: translate(0%, 8%) rotate(-8deg);
+}
+.fancy:hover > .letter:nth-child(5) {
+  transform: translate(0%, -20%) rotate(5deg);
+}
+.fancy:hover > .letter:nth-child(6) {
+  transform: translate(0%, 20%) rotate(-3deg);
+}
+.fancy:hover > .letter:nth-child(7) {
+  transform: translate(0%, 40%) rotate(-5deg);
+}
+.fancy:hover > .letter:nth-child(8) {
+  transform: translate(0%, 15%) rotate(10deg);
+}
+.fancy:hover > .letter:nth-child(9) {
+  transform: translate(0%, -50%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(10) {
+  transform: translate(0%, 15%) rotate(-6deg);
+}
+.fancy :hover > .letter:nth-child(11) {
+  transform: translate(50%, -10%) rotate(3deg);
+}
+.fancy:hover > .letter:nth-child(12) {
+  transform: translate(120%, 60%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(13) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(14) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
